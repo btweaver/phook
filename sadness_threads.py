@@ -36,8 +36,8 @@ except NoSuchElementException:
 time.sleep(1) 
 
 # Switch to URL based on task after login
-URL = ''
-driver.get(URL)
+URL_2 = ''
+driver.get(URL_2)
 
 # list of contestants
 sadness = [
@@ -45,7 +45,7 @@ sadness = [
 
 # New thread loop
 for i in sadness:
-    driver.get(URL)
+    driver.get(URL_2)
     time.sleep(1)
     driver.find_element(By.ID, 'subject').send_keys(f'thread title {i[0]} v {i[1]} ~~~~') # <--- thread title
     driver.find_element(By.ID, 'message').send_keys(f'body') # <----- message body
