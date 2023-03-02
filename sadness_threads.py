@@ -56,3 +56,12 @@ for i in sadness:
     driver.find_element(By.ID, 'poll_option_text').send_keys(f'{i[0]} \n{i[1]}')
     driver.find_element(By.NAME, 'post').click()
     time.sleep(30) 
+
+    
+# Post comment
+# for i in range(3,26):
+#     driver.get('insert URL)
+#     time.sleep(2)
+#     driver.find_element(By.NAME, 'message').send_keys(f'message body')
+#     driver.find_element(By.NAME, 'post').click()
+#     time.sleep(28) 
