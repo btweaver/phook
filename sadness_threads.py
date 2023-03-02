@@ -11,7 +11,7 @@ options.add_argument('--window-size=1920,1200')
 
 # Compile driver location and assign URL
 URL = 'https://phook.net/forum/index.php'
-DRIVER_PATH = '/chromedriver_mac64/chromedriver'
+DRIVER_PATH = '/pathto/chromedriver'  # <------ https://chromedriver.chromium.org/downloads
 driver = webdriver.Chrome(options = options, executable_path=DRIVER_PATH)
 driver.get(URL)
 
@@ -36,22 +36,23 @@ except NoSuchElementException:
 time.sleep(1) 
 
 # Switch to URL based on task after login
-driver.get("https://phook.net/forum/posting.php?mode=post&f=3")
+URL = ''
+driver.get(URL)
 
 # list of contestants
 sadness = [
 ]
 
-# CREATE NEW THREAD
+# New thread loop
 for i in sadness:
-    driver.get("https://phook.net/forum/posting.php?mode=post&f=3")
+    driver.get(URL)
     time.sleep(1)
     driver.find_element(By.ID, 'subject').send_keys(f'thread title {i[0]} v {i[1]} ~~~~') # <--- thread title
     driver.find_element(By.ID, 'message').send_keys(f'body') # <----- message body
     container = driver.find_element(By.ID, 'poll-panel')
     driver.execute_script("arguments[0].style.display = 'block';", container)
     time.sleep(1)
-    driver.find_element(By.ID, 'poll_title').send_keys('sadness showdown')
+    driver.find_element(By.ID, 'poll_title').send_keys('poll title')
     driver.find_element(By.ID, 'poll_option_text').send_keys(f'{i[0]} \n{i[1]}')
     driver.find_element(By.NAME, 'post').click()
     time.sleep(30) 
