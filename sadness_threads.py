@@ -40,38 +40,6 @@ driver.get("https://phook.net/forum/posting.php?mode=post&f=3")
 
 # list of contestants
 sadness = [
-    ['1 cgris', '16 fook'],
-    ['8 blee', '9 bees'],
-    ['5 mbg', '12 boobless'],
-    ['4 briank', '13 crack'],
-    ['6 suprisevalleywsp', '11 babydonkey'],
-    ['3 amishbob', '14 feenom'],
-    ['7 bearcobb', '10 bjk'],
-    ['2 jbs', '15 mattpanic1'],
-    ['1 joe_', '16 moose'],
-    ['8 deadgator', '9 joonze'],
-    ['5 ren', '12 januszak'],
-    ['4 cpj', '13 giddy'],
-    ['6 eight', '11 bluelawn'],
-    ['3 antelope5', '14 ILL'],
-    ['7 elroy', '10 boots'],
-    ['2 jcbstan', '15 hermit'],
-    ['1 sand', '16 pooks'],
-    ['8 sticky-sweet', '9 ericpotato'],
-    ['5 shamus', '12 maki'],
-    ['4 hobbs', '13 pyrrh'],
-    ['6 schof', '11 jakqlin'],
-    ['3 jancy', '14 mid'],
-    ['7 secondtube', '10 cactus'],
-    ['2 jibs', '15 pish'],
-    ['1 trout', '16 warpar'],
-    ['8 treef', '9 halyem'],
-    ['5 yoyo', '12 sycho'],
-    ['4 gratefuldad', '13 toda'],
-    ['6 phishingruven', '11 knotesau'],
-    ['3 menudo', '14 simonie'],
-    ['7 milliways', '10 flounder'],
-    ['2 kbd', '15 rdf']
 ]
 
 # CREATE NEW THREAD
